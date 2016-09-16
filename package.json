@@ -15,6 +15,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "file-loader": "^0.9.0",
+    "image-loader": "0.0.1",
+    "image-webpack-loader": "^2.0.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "react": "^15.3.1",
