@@ -29,10 +29,11 @@ ul.menu-list{
 
 #sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     left: 250px;
     width: 0;
     height: 100%;
+    min-height: 100%;
     margin-left: -250px;
     overflow-y: auto;
     background: #2b4767;
@@ -68,7 +69,8 @@ ul.menu-list{
     border: none;
     box-shadow: none;
     background: #2b4767;
-	color: #fff;	
+	color: #fff;
+
  }
  .sidebar-nav .dropdown-menu li a{
 	color: #fff;	
@@ -93,10 +95,11 @@ ul.menu-list{
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: 10px;
     line-height: 40px;
 }
 
@@ -138,6 +141,9 @@ ul.menu-list{
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
     }
 
     #wrapper.toggled {
@@ -209,6 +215,9 @@ header.navbar-static-top{
 html, body, #app{
 	height: 100%;
 }
-#app{
+#app, html{
 	background-color: #ecf0f5;
+}
+div.container-fluid{
+    padding: 0 0;
 }
